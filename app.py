@@ -18,10 +18,10 @@ if uploaded_file:
     col1, col2 = st.columns(2)
     with col1:
         st.header("Original Image")
-        st.image(original_image, use_column_width=True)
+        st.image(original_image, use_container_width=True)
     with col2:
         st.header("Grayscale Image")
-        st.image(gray_image, use_column_width=True)
+        st.image(gray_image, use_container_width=True)
 
     # download button for grayscale image
     buffer = io.BytesIO()
